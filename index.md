@@ -74,3 +74,71 @@ var tag = '<img src="hoge.png" />';
 'hoge\nfuga'
 '\thoge'
 ```
+
+## 010 数値型の値を表現したい
+```
+var num = 0xFF // 16進数リテラル(255)
+var num = 1.5e-3 // 浮動小数点リテラル(0.0015)
+```
+
+## 011 真偽値
+
+## 012 配列
+- リテラル表現
+```
+var data = ['a', 'b', 'c']
+```
+- 参照はブラケット構文
+```
+data[0] // 'a'
+```
+
+## 013 連想配列(ハッシュ)
+- Objectオブジェクトを連想配列として利用。連想配列のキーをプロパティ、値として関数リテラルを持つプロパティのことをメソッド。
+- リテラル表現
+```
+var obj1 = {a:100, b:200, c:300}
+```
+- Objectコンストラクタ
+```
+var obj2 = new Object();
+obj2.a = 100;
+obj2.b = 200;
+obj2.c = 300;
+```
+- 値を参照するにはドット演算子(キーは識別子のみ。数字不可)かブラケット構文
+```
+var obj = {a:100, 2:'hoge'}
+obj.a
+100
+obj.2
+SyntaxError: missing ; before statement
+obj[a]
+ReferenceError: a is not defined
+obj['a']
+100
+obj[2]
+"hoge"
+```
+
+## 014 データ型を変換したい
+- 数値型へ
+```
+parseInt('888abc') // 888
+parseFloat('888abc') // 888
+Number('888abc') // NaN
+
+parseInt('0x10') // 16
+parseFloat('0x10') // 0
+Number('0x10') // 16
+
+parseInt('1.414E3') // 1
+parseFloat('1.414E3') // 1414
+Number('1.414E3') // 1414
+```
+- 文字列型、論理型へ
+    - Boolean関数は、空文字、ゼロ、NaN、null、undefinedをfalse、それ以外をtrue
+```
+String(123) // '123'
+Boolean(-1) // true
+```

@@ -7,7 +7,7 @@ JavaScript逆引きレシピで勉強する
 
 ## 001 HTMLページにJavaScriptのコードを組み込みたい
 
-```
+```HTML
 <body>
 
 <script type="text/javascript">
@@ -18,7 +18,7 @@ console.log('hoge');
 
 - body閉じタグの直前がおすすめ
 
-```
+```HTML
 <!-- 外部スクリプト -->
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <!-- インラインスクリプト -->
@@ -163,5 +163,3 @@ String(123) // '123'
 Boolean(-1) // true
 ```
 
-
-{% gist oharato/bef63fca2dde79d27f2e %}

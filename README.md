@@ -7,7 +7,7 @@ JavaScript逆引きレシピで勉強する
 
 ## 001 HTMLページにJavaScriptのコードを組み込みたい
 
-```
+```HTML
 <body>
 
 <script type="text/javascript">

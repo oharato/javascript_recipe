@@ -162,3 +162,6 @@ Number('1.414E3') // 1414
 String(123) // '123'
 Boolean(-1) // true
 ```
+
+
+{% gist oharato/bef63fca2dde79d27f2e %}

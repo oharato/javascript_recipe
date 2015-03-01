@@ -1,3 +1,6 @@
+---
+layout: default
+---
 JavaScript逆引きレシピで勉強する
 
 # 01 基本構文

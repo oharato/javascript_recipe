@@ -1,13 +1,10 @@
----
-layout: default
----
 JavaScript逆引きレシピで勉強する
 
 # 01 基本構文
 
 ## 001 HTMLページにJavaScriptのコードを組み込みたい
 
-```HTML
+```
 <body>
 
 <script type="text/javascript">
@@ -18,7 +15,7 @@ console.log('hoge');
 
 - body閉じタグの直前がおすすめ
 
-```HTML
+```
 <!-- 外部スクリプト -->
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <!-- インラインスクリプト -->
